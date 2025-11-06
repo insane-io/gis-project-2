@@ -1,75 +1,53 @@
-# 🧠 Project-2 — Full Stack Application
+# Project-2 — Local setup
 
-This project contains a **FastAPI backend** and a **React (Vite) frontend**.
+FastAPI backend + React (Vite) frontend.
 
-Follow the instructions below to set up and run both parts.
+Minimal instructions to run locally.
 
----
+Prerequisites
+- Python 3.10+, pip
+- Node.js 16+ and npm
 
-## 🖥️ Backend Setup
+Backend (Linux / macOS)
 
-1. Navigate to the backend directory  
-   cd backend
+```bash
+cd backend
+python3 -m venv env
+source env/bin/activate
+pip install -r requirements.txt
+uvicorn main:app --reload
+```
 
-2. Create a virtual environment  
-   - For Windows:  
-     python -m venv env  
-     env\Scripts\activate  
+Backend (Windows PowerShell)
 
-   - For Linux / macOS:  
-     python3 -m venv env  
-     source env/bin/activate  
+```powershell
+cd backend
+python -m venv env
+.\env\Scripts\Activate.ps1
+pip install -r requirements.txt
+uvicorn main:app --reload
+```
 
-3. Install dependencies  
-   pip install -r requirements.txt
+Frontend
 
-4. Run the backend server  
-   uvicorn main:app --reload
+```bash
+cd frontend
+npm install
+npm run dev
+```
 
-The backend will be running at:  
-👉 http://127.0.0.1:8000
+If the frontend needs to call the backend, set the API URL in `frontend/.env` (Vite reads variables starting with `VITE_`):
 
----
+```bash
+VITE_API_URL=http://127.0.0.1:8000
+```
 
-## 💻 Frontend Setup
+Project layout
 
-1. Navigate to the frontend directory  
-   cd frontend
-
-2. Install dependencies  
-   npm install
-
-3. Run the development server  
-   npm run dev
-
-The frontend will be running at:  
-👉 http://localhost:5173
-
----
-
-## ⚙️ Notes
-
-- Ensure that both the **backend** and **frontend** servers are running simultaneously.  
-- Update any API URLs in your frontend code (if applicable) to point to the correct backend address.  
-- Use different terminal windows/tabs for frontend and backend.
-
----
-
-## 🧩 Project Structure
-
+```
 project-2/
-├── backend/
-│   ├── main.py
-│   ├── requirements.txt
-│   ├── __pycache__/
-│   └── env/
-│
-├── frontend/
-│   ├── src/
-│   ├── public/
-│   ├── package.json
-│   ├── vite.config.js
-│   ├── index.html
-│   └── node_modules/
-│
-└── README.md
+├── backend/    # FastAPI app
+└── frontend/   # Vite + React
+```
+
+That's it — run backend and frontend in separate terminals.
