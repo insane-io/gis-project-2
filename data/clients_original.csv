@@ -1,0 +1,11 @@
+client_id,client_name,latitude,longitude,time_window_start,time_window_end,service_duration,priority
+C001,Tech Solutions Andheri,19.1136,72.8697,10:00,14:00,30,High
+C002,Finance Corp Bandra,19.0596,72.8295,09:00,12:00,45,High
+C003,Retail Hub Powai,19.1197,72.9058,11:00,16:00,60,Medium
+C004,Pharma Ltd Goregaon,19.1663,72.8526,09:30,13:00,45,Medium
+C005,IT Services Malad,19.1864,72.8481,10:00,15:00,30,Low
+C006,Manufacturing Vikhroli,19.1076,72.9264,13:00,17:00,90,High
+C007,Logistics Kurla,19.0688,72.8789,09:00,18:00,30,Medium
+C008,Healthcare Ghatkopar,19.0864,72.9081,11:00,15:00,45,High
+C009,Education Borivali,19.2403,72.8512,10:00,14:00,60,Low
+C010,Consultancy Churchgate,18.9322,72.8264,14:00,17:00,45,Medium

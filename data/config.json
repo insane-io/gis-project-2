@@ -1,0 +1,22 @@
+{
+  "sales_rep": {
+    "name": "Riya Sharma",
+    "start_location": {
+      "name": "Office - Fort",
+      "latitude": 18.9401,
+      "longitude": 72.8350
+    },
+    "working_hours": {
+      "start": "09:00",
+      "end": "18:00"
+    },
+    "max_distance_km": 200,
+    "max_travel_hours": 6
+  },
+  "optimization_settings": {
+    "time_limit_seconds": 30,
+    "first_solution_strategy": "PATH_CHEAPEST_ARC",
+    "local_search_metaheuristic": "GUIDED_LOCAL_SEARCH"
+  },
+  "osrm_server": "http://router.project-osrm.org"
+}
